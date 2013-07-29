@@ -2,7 +2,7 @@
 #include "myMath.hpp"
 
 
-double myMath::add(const std::vector<double> args){
+double myMath::add(const std::vector<double> &args){
     
     double result = 0;
     
@@ -13,7 +13,7 @@ double myMath::add(const std::vector<double> args){
     
 }
 
-double myMath::subtract(const std::vector<double> args){
+double myMath::subtract(const std::vector<double> &args){
     
     double result = args[0];
     
@@ -23,7 +23,7 @@ double myMath::subtract(const std::vector<double> args){
     return result;
 }
 
-double myMath::multiply(const std::vector<double> args){
+double myMath::multiply(const std::vector<double> &args){
     
     double result = args[0];
     

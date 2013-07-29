@@ -27,7 +27,7 @@ Handle<Value> Compute(const Arguments& args){
         {
             //check to make sure each value is a valid number, if not throw exception
             if(arr->Get(Number::New(i))->IsNumber())
-                myArgs[i] = arr->Get(Number::New(i))->ToObject()->Uint32Value();
+                myArgs[i] = arr->Get(Number::New(i))->ToObject()->NumberValue();
             else{
                 ThrowException(Exception::TypeError(String::New("Invalid values in array.")));
                 return scope.Close(Undefined());
